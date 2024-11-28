@@ -1,0 +1,97 @@
+/* Container styling */
+.mainContainer {
+  font-family: Arial, sans-serif;
+
+  margin: 40px auto;
+}
+
+.container {
+  width: 80%;
+  justify-content: space-between;
+}
+
+.container2 {
+  background-color: blue;
+}
+/* Headings */
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+  font-size: 1.3em;
+  margin-top: 30px;
+}
+
+/* Select elements */
+select {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+input {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #ddd;
+}
+
+
+/* Conversion result text */
+div > div {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 1.1em;
+  color: #555;
+}
+
+/* Button styling (if you plan to add buttons) */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Line graph container */
+.LineGraph {
+  margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  div {
+    padding: 15px;
+  }
+
+  h2,
+  h1 {
+    font-size: 1.2em;
+  }
+
+  select,
+  input[type="number"] {
+    font-size: 0.9em;
+  }
+}
