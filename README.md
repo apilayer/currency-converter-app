@@ -38,8 +38,8 @@ To set up the Currency Converter App project locally, follow these steps:
 4. Create a `.env.local` file in the root directory and add your API keys:
 
    ```
-   IPSTACK_API_KEY=your_ipstack_api_key_here
-   EXCHANGE_RATE_API_KEY=your_exchange_rate_api_key_here
+   VITE_IPSTACK_API_KEY=your_ipstack_api_key_here
+   VITE_EXCHANGE_RATE_API_KEY=your_exchange_rate_api_key_here
    ```
 
 5. Run the development server:

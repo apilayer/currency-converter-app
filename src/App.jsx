@@ -22,7 +22,7 @@ const App = () => {
 
         try {
           const response = await fetch(
-            `http://api.ipstack.com/${ipAddress}?access_key=${IPSTACK_API_KEY}`
+            `http://api.ipstack.com/${ipAddress}?access_key=${import.meta.env.VITE_IPSTACK_API_KEY}`
           );
           if (!response.ok) {
             throw new Error("Network response was not ok");
@@ -60,7 +60,7 @@ const App = () => {
       if (convertCurrency === "" || selectedCurrency === "") return;
       try {
         const response = await fetch(
-          `https://api.exchangeratesapi.io/v1/latest?access_key=${EXCHANGE_RATE_API_KEY}&symbols=${selectedCurrency},${convertCurrency}`
+          `https://api.exchangeratesapi.io/v1/latest?access_key=${import.meta.env.VITE_EXCHANGE_RATE_API_KEY}&symbols=${selectedCurrency},${convertCurrency}`
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");
